@@ -1,0 +1,4 @@
+#!#!/bin/bash
+echo Starting training process now
+python train.py --yaml insert/path1/here; python train.py --yaml insert/path2/here
+echo Finished training
