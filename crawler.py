@@ -18,9 +18,6 @@ if __name__ == "__main__":
 
     permutations = product(*descriptors)
     keywords = [" ".join(x) for x in permutations]
-    keywords = ["curb", "single step down", "single step up", "two stairs", "two stairs", 
-                "short public stairs", "short outdoor stairs", "short stone stairs",
-                "short wooden stairs", "short metal stairs"]
 
     for kw in keywords:
         crawl_bing(os.path.join("img_crawler","imgs","stair detection", kw), kw, max_num=30)
